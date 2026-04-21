@@ -7,6 +7,7 @@ const saveBtn = document.getElementById('save-btn');
 saveBtn.addEventListener('click', function() {
     myLeads.push(inputValue.value);
     inputValue.value = '';
+    localStorage.setItem("myLeads", JSON.stringify(myLeads));
     renderList();
 });
 
