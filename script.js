@@ -3,6 +3,13 @@ let myLeads = [];
 let inputValue = document.getElementById('inputField');
 const savedInputs = document.getElementById('saved-inputs')
 
+let leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"))
+
+if (leadsFromLocalStorage) {
+    myLeads = leadsFromLocalStorage;
+    renderList();
+}
+
 const saveBtn = document.getElementById('save-btn');
 saveBtn.addEventListener('click', function() {
     myLeads.push(inputValue.value);
