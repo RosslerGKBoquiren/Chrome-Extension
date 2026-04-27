@@ -1,34 +1,29 @@
 # Chrome Extension
 
-🚀 Lead Tracker Chrome Extension
-A lightweight Chrome Extension designed to help users save URLs and text snippets directly from their browser. Built with HTML, CSS, and JavaScript, this project demonstrates DOM manipulation, local storage persistence, and functional UI design.
+# Leads Tracker Chrome Extension 🚀
 
-🚀 Installation
-Clone this repository.
+A Chrome Extension designed to track and manage leads in real-time. This project was migrated from a basic frontend script to a modern development workflow using **Vite** and **Firebase**.
 
-Open Chrome and navigate to chrome://extensions/.
+## 🛠️ Tech Stack
+- **Frontend:** HTML5, CSS3, JavaScript (ES6+)
+- **Build Tool:** [Vite](https://vitejs.dev/) with [@crxjs/vite-plugin](https://crxjs.dev/)
+- **Database:** [Firebase Realtime Database](https://firebase.google.com/products/realtime-database)
+- **Security:** Environment Variables (.env) to protect sensitive API keys.
 
-Enable Developer mode in the top right corner.
+## ✨ Key Features
+- **Real-time Sync:** Leads are saved and retrieved instantly using Firebase `onValue` listeners.
+- **Manifest V3:** Fully compliant with the latest Chrome Extension standards.
+- **Optimized Build:** Uses Vite for Hot Module Replacement (HMR) during development and minified assets for production.
+- **Secure Configuration:** Implements a `.env` strategy to keep database credentials out of version control.
 
-Click Load unpacked and select the project folder.
+## 🚀 Getting Started
 
-🛠 Features
-Manual Entry: Type leads into the input field and save them to your list.
+### Prerequisites
+- Node.js installed
+- A Firebase project with Realtime Database enabled
 
-One-Click Tab Save: Automatically capture the URL of your currently active browser tab.
-
-Persistent Storage: Leads are saved in localStorage, so they remain even after closing the browser.
-
-Bulk Delete: Quickly clear your list when you're done.
-
-🧠 Development Process & AI Collaboration
-This project was an exercise in modern web development practices. During the build, I collaborated with Gemini (AI) to troubleshoot logic and refine the user experience.
-
-Specifically, AI was used for:
-
-Code Debugging: Identifying issues with nested quotes in template literals and fixing JSON.parse logic errors.
-
-UI/UX Design: Refining the CSS layout to ensure a clean, responsive "popup" interface that fits Chrome's extension standards.
-
-Best Practices: Implementing efficient DOM rendering techniques (like building strings before injecting innerHTML) to optimize performance.
-
+### Installation
+1. **Clone the repo:**
+   ```bash
+   git clone [https://github.com/your-username/leads-tracker-extension.git](https://github.com/your-username/leads-tracker-extension.git)
+   cd leads-tracker-extension
